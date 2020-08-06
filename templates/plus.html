@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if svar %}
+Du har svarade: {{svar}}<br>
+rätt svar är {{ summa }}
+{%endif%}
+ <br>
+    {{ a }} + {{ b }} = 
+        <br>
+        <br>
+
+
+   <form method="POST">
+    <input type="hidden" id="a" name="a" value={{ a }}>
+    <input type="hidden" id="b" name="b" value={{ b }}>
+    <input name="svar">
+    <input type="submit">
+</form>
+
+
+
+{% endblock %}

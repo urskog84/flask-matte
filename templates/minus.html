@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+    {{ a }} - {{ b }} = 
+
+   <br>
+  <br>
+
+<form method="POST">
+    <input type="hidden" id="a" name="a" value={{ a }}>
+    <input type="hidden" id="b" name="b" value={{ b }}>
+    <input name="svar">
+    <input type="submit">
+</form>
+
+{% endblock %}
